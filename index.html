@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Time Interval Representation for Word-Level Timestamping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chosen Palette: Calm Harmony -->
+    <!-- Application Structure Plan: This application uses a single-page dashboard layout, with a top navigation bar for smooth scrolling to different thematic sections. The structure is designed to guide the user progressively through the paper's core concepts: first, an introduction and visual comparison (Problem & Solution) to intuitively grasp the research background; then, a deep dive into the core methodology (three key innovations); followed by the interactive core—the "Interactive Results Dashboard," where users can dynamically view chart data by switching datasets and parameters to visually experience the new method's superiority; then, an ablation study to further validate the effectiveness of key modules; and finally, a conclusion. This macro-to-micro, qualitative-to-quantitative structure is not a simple replication of the paper's chapters but is optimized for information absorption and exploration, making the research value accessible even to non-experts. -->
+    <!-- Visualization & Content Choices: 1. **Problem Comparison**: Goal(Compare), Method(HTML/CSS diagram), Interaction(None), Rationale(Visually demonstrate the fundamental difference between absolute and relative timestamps). 2. **Core Methods**: Goal(Organize/Inform), Method(Three-column card layout), Interaction(Hover effect), Rationale(Clearly present the three main technical innovations). 3. **Performance Comparison**: Goal(Compare/Explore), Method(Multiple bar charts), Interaction(Buttons to switch datasets/tolerance), Rationale(Transform static table data into dynamic, explorable charts to enhance user engagement), Library(Chart.js). 4. **ASR Performance**: Goal(Compare), Method(Radar chart), Interaction(Tooltip on hover), Rationale(A radar chart effectively compares the model's comprehensive performance across multiple datasets, echoing the original paper's figure), Library(Chart.js). 5. **Ablation Study**: Goal(Compare/Justify), Method(Bar chart), Interaction(Tooltip on hover), Rationale(Clearly show performance changes after removing key modules, justifying their importance), Library(Chart.js). -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+            background-color: #f4f4f5; /* A light, warm neutral */
+            color: #1f2937;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 450px;
+            }
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #f97316;
+        }
+        .active-btn {
+            background-color: #ea580c !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body class="bg-stone-100">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-slate-700">Time-Aware SpeechLLM</h1>
+            <div class="hidden md:flex space-x-8">
+                <a href="#problem" class="text-slate-600 nav-link">Problem & Solution</a>
+                <a href="#method" class="text-slate-600 nav-link">Core Methods</a>
+                <a href="#results" class="text-slate-600 nav-link">Results</a>
+                <a href="#ablation" class="text-slate-600 nav-link">Ablation Study</a>
+                <a href="#conclusion" class="text-slate-600 nav-link">Conclusion</a>
+            </div>
+            <div class="md:hidden">
+                <select id="mobile-nav" class="bg-white border border-slate-300 rounded-md p-2 text-slate-700">
+                    <option value="#problem">Problem & Solution</option>
+                    <option value="#method">Core Methods</option>
+                    <option value="#results">Results</option>
+                    <option value="#ablation">Ablation Study</option>
+                    <option value="#conclusion">Conclusion</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="intro" class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-4">The Leap from 'Content Understanding' to 'Temporal Awareness'</h2>
+            <p class="max-w-3xl mx-auto text-lg text-slate-600">
+                We explores how to enable Speech Large Language Models (SpeechLLMs) to not only understand speech content but also precisely grasp its temporal structure, solving key pain points of traditional techniques with an innovative "relative timestamp" method.
+            </p>
+        </section>
+
+        <section id="problem" class="mb-20">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-slate-800">The Problem: The Dilemma of Absolute Timestamps</h3>
+                <p class="mt-2 text-slate-600">Traditional methods rely on absolute timestamps but face three major challenges: vocabulary explosion, error accumulation, and poor generalization.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+                    <h4 class="font-bold text-xl mb-4 text-red-600">Traditional Method: Absolute Timestamps</h4>
+                    <div class="space-y-3 text-slate-600">
+                        <p>Predicts the start and end time of each word as an absolute value.</p>
+                        <div class="flex items-center space-x-2 p-3 bg-red-50 rounded-lg">
+                            <span class="text-2xl">🕒</span>
+                            <code class="text-sm">&lt;0.45&gt; Okay &lt;1.10&gt; let's &lt;2.50&gt; go ...</code>
+                        </div>
+                        <div class="flex items-start mt-4">
+                            <span class="text-red-500 mr-3 mt-1">❌</span>
+                            <div>
+                                <h5 class="font-semibold">Drawbacks</h5>
+                                <ul class="list-disc list-inside mt-1 space-y-1">
+                                    <li>Requires a massive timestamp vocabulary for long audio.</li>
+                                    <li>Prediction errors accumulate and grow over time.</li>
+                                    <li>Struggles to generalize to time ranges beyond the training data.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-orange-400">
+                    <h4 class="font-bold text-xl mb-4 text-green-600">Proposed Solution: Relative Timestamps</h4>
+                     <div class="space-y-3 text-slate-600">
+                        <p>Predicts only the time interval between consecutive words, not their absolute positions.</p>
+                        <div class="flex items-center space-x-2 p-3 bg-green-50 rounded-lg">
+                            <span class="text-2xl">⏱️</span>
+                            <code class="text-sm">&lt;0.45&gt; Okay &lt;+0.65&gt; let's &lt;+1.40&gt; go ...</code>
+                        </div>
+                        <div class="flex items-start mt-4">
+                            <span class="text-green-500 mr-3 mt-1">✅</span>
+                            <div>
+                                <h5 class="font-semibold">Advantages</h5>
+                                <ul class="list-disc list-inside mt-1 space-y-1">
+                                    <li>Small, fixed vocabulary, independent of audio length.</li>
+                                    <li>Effectively avoids error accumulation for more stable predictions.</li>
+                                    <li>Can process audio of any length by accumulating intervals.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="method" class="mb-20">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-slate-800">Three Core Methodologies</h3>
+                <p class="mt-2 text-slate-600">The research adopts three key technical strategies to achieve efficient and accurate timestamp prediction.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                     <div class="text-3xl mb-4">🔄</div>
+                    <h4 class="font-bold text-xl mb-2">Relative Timestamp Representation</h4>
+                    <p class="text-slate-600">Using inter-word intervals instead of absolute time points fundamentally solves the problems of vocabulary explosion and error accumulation, making the model lighter and more generalizable.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-3xl mb-4">🛠️</div>
+                    <h4 class="font-bold text-xl mb-2">Hybrid Fine-Tuning Strategy</h4>
+                    <p class="text-slate-600">Full fine-tuning is applied to new timestamp-related modules, while LoRA is used for the original decoder layers. This balances learning new capabilities with preserving linguistic knowledge, achieving both efficiency and effectiveness.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-3xl mb-4">🎭</div>
+                    <h4 class="font-bold text-xl mb-2">Masked Timestamp Training</h4>
+                    <p class="text-slate-600">Randomly masking some timestamps during training forces the model to predict based on context and audio information, preventing overfitting and enhancing its robustness in real-world scenarios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="mb-20 bg-white p-8 rounded-2xl shadow-lg">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-slate-800">Interactive Results Dashboard</h3>
+                <p class="mt-2 text-slate-600">Visually compare the performance of this research method against other leading models across different datasets and evaluation criteria.</p>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-lg shadow-sm" role="group">
+                    <button type="button" id="btn-view-performance" class="active-btn px-6 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-200 rounded-l-lg hover:bg-slate-100 focus:z-10 focus:ring-2 focus:ring-orange-500">
+                        Timestamp Prediction Performance
+                    </button>
+                    <button type="button" id="btn-view-asr" class="px-6 py-2 text-sm font-medium text-slate-700 bg-white border-t border-b border-r border-slate-200 rounded-r-lg hover:bg-slate-100 focus:z-10 focus:ring-2 focus:ring-orange-500">
+                        Speech Recognition (ASR) Performance
+                    </button>
+                </div>
+            </div>
+
+            <div id="performance-view">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label for="dataset-selector" class="block mb-2 text-sm font-medium text-slate-700">Select Dataset:</label>
+                        <select id="dataset-selector" class="bg-white border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5">
+                            <option value="WenetMeeting" selected>WenetMeeting (Chinese)</option>
+                            <option value="Librispeech">Librispeech (English)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tolerance-selector" class="block mb-2 text-sm font-medium text-slate-700">Select Tolerance:</label>
+                        <select id="tolerance-selector" class="bg-white border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5">
+                            <option value="80">80 ms</option>
+                            <option value="160">160 ms</option>
+                            <option value="240" selected>240 ms</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="chart-container">
+                        <canvas id="precisionRecallChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="avgDiffChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div id="asr-view" class="hidden">
+                 <p class="text-center text-slate-600 mb-4">Word Error Rate (WER) comparison—lower is better. The proposed method (Relative Timestamp) performs best on all datasets.</p>
+                <div class="chart-container">
+                    <canvas id="asrChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ablation" class="mb-20">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-slate-800">Ablation Study: Identifying the Keys to Success</h3>
+                <p class="mt-2 text-slate-600">Removing specific modules validates their contribution to the model's performance. Both "TS Loss" and "Timestamp Masking" are proven to be crucial.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h4 class="font-bold text-xl mb-4 text-center">Impact of Key Modules on WER (Chinese Dataset)</h4>
+                    <div class="chart-container" style="height: 350px;">
+                        <canvas id="ablationWerChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                     <h4 class="font-bold text-xl mb-4 text-center">Impact of Key Modules on Precision (Chinese Dataset)</h4>
+                    <div class="chart-container" style="height: 350px;">
+                         <canvas id="ablationPrecisionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="text-center bg-slate-800 text-white p-12 rounded-2xl">
+            <h3 class="text-3xl font-bold mb-4">Conclusion: A New Era of Temporal Awareness</h3>
+            <p class="max-w-3xl mx-auto text-lg text-slate-300">
+                Upgrade large language models from mere "content understanding machines" to "temporally-aware content understanding machines" capable of fine-grained time alignment. By introducing relative timestamps, hybrid fine-tuning, and masked training, it paves a new path for building high-performance, high-precision speech processing systems.
+            </p>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const performanceData = {
+                Librispeech: {
+                    models: ['Qwen2-Audio', 'Whisper T.', 'SenseVoice', 'Canary', 'Absolute T.', 'Relative T. (Ours)'],
+                    80: {
+                        precision: [0.00, 2.70, 1.10, 35.51, 12.30, 40.49],
+                        recall: [0.00, 2.36, 1.10, 35.27, 5.51, 38.44],
+                        avgDiff: [1031.23, 131.92, 176.38, 444.30, 159.05, 145.72]
+                    },
+                    160: {
+                        precision: [0.01, 10.09, 5.20, 71.23, 17.03, 77.74],
+                        recall: [0.00, 8.83, 5.19, 70.74, 7.63, 75.24],
+                        avgDiff: [1031.18, 120.52, 166.71, 268.18, 156.58, 139.21]
+                    },
+                    240: {
+                        precision: [0.16, 19.90, 12.88, 84.57, 21.44, 83.65],
+                        recall: [0.05, 17.42, 12.86, 83.99, 9.61, 82.64],
+                        avgDiff: [1030.42, 101.14, 148.59, 200.47, 152.51, 127.91]
+                    }
+                },
+                WenetMeeting: {
+                    models: ['Qwen2-Audio', 'Whisper T.', 'SenseVoice', 'Absolute T.', 'Relative T. (Ours)'],
+                    80: {
+                        precision: [60.81, 3.54, 28.52, 45.14, 61.07],
+                        recall: [56.06, 1.51, 27.96, 42.52, 60.62],
+                        avgDiff: [59.03, 164.09, 80.80, 186.73, 55.80]
+                    },
+                    160: {
+                        precision: [76.07, 24.30, 71.40, 62.99, 78.04],
+                        recall: [70.13, 10.38, 69.99, 59.34, 75.46],
+                        avgDiff: [49.11, 134.03, 45.26, 168.29, 42.45]
+                    },
+                    240: {
+                        precision: [82.30, 43.97, 82.82, 72.41, 91.13],
+                        recall: [75.87, 18.79, 81.19, 68.22, 86.88],
+                        avgDiff: [43.07, 102.48, 32.47, 152.17, 30.34]
+                    }
+                }
+            };
+
+            const asrData = {
+                labels: ['AISHELL-1', 'AISHELL-2', 'Wenet Meeting', 'Librispeech', 'Common Voice'],
+                datasets: [
+                    {
+                        label: 'Relative T. (Ours)',
+                        data: [1.26, 2.15, 5.56, 2.78, 11.63],
+                        backgroundColor: 'rgba(234, 88, 12, 0.2)',
+                        borderColor: 'rgb(234, 88, 12)',
+                        pointBackgroundColor: 'rgb(234, 88, 12)',
+                    },
+                     {
+                        label: 'Absolute T.',
+                        data: [2.01, 2.87, 7.12, 3.99, 16.41],
+                        backgroundColor: 'rgba(71, 85, 105, 0.2)',
+                        borderColor: 'rgb(71, 85, 105)',
+                        pointBackgroundColor: 'rgb(71, 85, 105)',
+                    }
+                ]
+            };
+
+            const ablationData = {
+                labels: ['Full Model', '- TS Loss', '- Timestamp Masking'],
+                wer: [2.15, 2.31, 2.56],
+                precision: [0.9763, 0.9715, 0.9658]
+            };
+
+            let precisionRecallChart, avgDiffChart, asrChartInstance, ablationWerChart, ablationPrecisionChart;
+
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#475569'
+                        },
+                        grid: {
+                            color: '#e2e8f0'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#475569'
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#334155'
+                        }
+                    }
+                }
+            };
+
+            function renderPerformanceCharts() {
+                const dataset = document.getElementById('dataset-selector').value;
+                const tolerance = document.getElementById('tolerance-selector').value;
+                const currentData = performanceData[dataset][tolerance];
+                const models = performanceData[dataset].models;
+
+                if (precisionRecallChart) precisionRecallChart.destroy();
+                precisionRecallChart = new Chart(document.getElementById('precisionRecallChart').getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: models,
+                        datasets: [{
+                            label: 'Precision (%)',
+                            data: currentData.precision,
+                            backgroundColor: 'rgba(234, 88, 12, 0.6)',
+                            borderColor: 'rgb(234, 88, 12)',
+                            borderWidth: 1
+                        }, {
+                            label: 'Recall (%)',
+                            data: currentData.recall,
+                            backgroundColor: 'rgba(71, 85, 105, 0.6)',
+                            borderColor: 'rgb(71, 85, 105)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: { ...chartOptions, plugins: { ...chartOptions.plugins, title: { display: true, text: 'Precision vs. Recall Comparison (%)', color: '#1e293b', font: { size: 16 } } } }
+                });
+
+                if (avgDiffChart) avgDiffChart.destroy();
+                avgDiffChart = new Chart(document.getElementById('avgDiffChart').getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: models,
+                        datasets: [{
+                            label: 'Average Time Difference (ms)',
+                            data: currentData.avgDiff,
+                            backgroundColor: 'rgba(251, 146, 60, 0.7)',
+                            borderColor: 'rgb(251, 146, 60)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: { ...chartOptions, plugins: { ...chartOptions.plugins, title: { display: true, text: 'Average Time Difference (ms) - Lower is Better', color: '#1e293b', font: { size: 16 } } } }
+                });
+            }
+            
+            function renderAsrChart() {
+                if(asrChartInstance) asrChartInstance.destroy();
+                asrChartInstance = new Chart(document.getElementById('asrChart').getContext('2d'), {
+                    type: 'radar',
+                    data: asrData,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: {
+                                angleLines: { color: '#cbd5e1' },
+                                grid: { color: '#e2e8f0' },
+                                pointLabels: { font: { size: 14 }, color: '#334155' },
+                                ticks: { backdropColor: 'rgba(255, 255, 255, 0.75)', color: '#475569' }
+                            }
+                        },
+                        plugins: {
+                            legend: { position: 'top', labels: { color: '#334155' } },
+                            title: { display: true, text: 'Word Error Rate (WER) % Across Datasets', color: '#1e293b', font: { size: 16 } }
+                        }
+                    }
+                });
+            }
+
+            function renderAblationCharts() {
+                if(ablationWerChart) ablationWerChart.destroy();
+                ablationWerChart = new Chart(document.getElementById('ablationWerChart').getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: ablationData.labels,
+                        datasets: [{
+                            label: 'Word Error Rate (WER %)',
+                            data: ablationData.wer,
+                            backgroundColor: ['#2dd4bf', '#fbbf24', '#f87171'],
+                        }]
+                    },
+                    options: { ...chartOptions, indexAxis: 'y', plugins: { legend: { display: false } } }
+                });
+
+                if(ablationPrecisionChart) ablationPrecisionChart.destroy();
+                ablationPrecisionChart = new Chart(document.getElementById('ablationPrecisionChart').getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: ablationData.labels,
+                        datasets: [{
+                            label: 'Precision',
+                            data: ablationData.precision.map(p => p * 100),
+                            backgroundColor: ['#38bdf8', '#a78bfa', '#f472b6'],
+                        }]
+                    },
+                    options: { ...chartOptions, indexAxis: 'y', scales: { ...chartOptions.scales, x: { ...chartOptions.scales.x, min: 95, max: 98 } }, plugins: { legend: { display: false } } }
+                });
+            }
+
+            document.getElementById('dataset-selector').addEventListener('change', renderPerformanceCharts);
+            document.getElementById('tolerance-selector').addEventListener('change', renderPerformanceCharts);
+
+            const btnPerformance = document.getElementById('btn-view-performance');
+            const btnAsr = document.getElementById('btn-view-asr');
+            const performanceView = document.getElementById('performance-view');
+            const asrView = document.getElementById('asr-view');
+
+            btnPerformance.addEventListener('click', () => {
+                performanceView.style.display = 'block';
+                asrView.style.display = 'none';
+                btnPerformance.classList.add('active-btn');
+                btnAsr.classList.remove('active-btn');
+            });
+
+            btnAsr.addEventListener('click', () => {
+                performanceView.style.display = 'none';
+                asrView.style.display = 'block';
+                btnAsr.classList.add('active-btn');
+                btnPerformance.classList.remove('active-btn');
+                renderAsrChart();
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            document.getElementById('mobile-nav').addEventListener('change', function(e) {
+                const targetId = e.target.value;
+                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+
+
+            renderPerformanceCharts();
+            renderAblationCharts();
+        });
+    </script>
+</body>
+</html>
+
