@@ -5,6 +5,7 @@ Relative Time Intervals Representation for Word-Level Timestamping with Masked T
 ![](img/intro.png)
 
 ## File Structure
+```
 /.
 │  index.html
 │  README.md
@@ -40,7 +41,7 @@ Relative Time Intervals Representation for Word-Level Timestamping with Masked T
 │
 └─script
         add_new_token.py
-
+```
 ## The rest code will be updated after the paper is accepted.
 
 ## [Github Pages Here](https://quanwei.fun/Timestamp-Aware-Speech-LLM/)
