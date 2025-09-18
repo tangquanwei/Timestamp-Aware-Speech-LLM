@@ -2,6 +2,7 @@
 
 This repository is the office implements for the paper: 
 Relative Time Intervals Representation for Word-Level Timestamping with Masked Training
+## [Github Pages Here](https://quanwei.fun/Timestamp-Aware-Speech-LLM/)
 ![](img/intro.png)
 
 ## File Structure
@@ -44,4 +45,4 @@ Relative Time Intervals Representation for Word-Level Timestamping with Masked T
 ```
 ## The rest code will be updated after the paper is accepted.
 
-## [Github Pages Here](https://quanwei.fun/Timestamp-Aware-Speech-LLM/)
+
