@@ -24,7 +24,7 @@ if __name__ == "__main__":
         "<|sil|>",
     ]
     if relative:
-        for i in range(501):
+        for i in range(500):
             tokens.append(f"<|{i / 100:.2f}|>")
     else:
         for i in range(3001):

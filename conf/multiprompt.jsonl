@@ -1,0 +1,3 @@
+{"task": "ASR", "prompt": "Please transcribe the audio into text."}
+{"task": "asr", "prompt": "Please transcribe the audio into text."}
+{"task": "timestamp_v0", "prompt": "Please transcribe the audio into text with timestamps."}

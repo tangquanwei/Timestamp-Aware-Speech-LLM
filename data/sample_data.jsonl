@@ -198,3 +198,203 @@
 {"key": "common_voice_en_32356791", "task": "timestamp_v0", "target": "<|0.78|>the<|0.07|>film<|0.40|>flopped<|0.65|>at<|0.15|>the<|0.10|>box<|0.51|>office<|0.42|>due<|0.45|>to<|0.19|>political<|0.55|>instabilities<|1.24|>caused<|0.38|>by<|1.04|>partition", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32356791.wav"}
 {"key": "common_voice_en_19499533", "task": "timestamp_v0", "target": "<|0.56|>anubis<|0.44|>was<|0.32|>thought<|1.34|>dead<|0.95|>but<|0.12|>actually<|0.41|>ascended", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19499533.wav"}
 {"key": "common_voice_en_21467274", "task": "timestamp_v0", "target": "<|0.46|>the<|0.08|>current<|0.29|>manager<|0.38|>is<|0.11|>stephen<|0.30|>hughes", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21467274.wav"}
+{"key": "common_voice_en_33089833", "task": "asr", "target": "Timothy Gallagher had resigned and Thomas Kynnersley was returned unopposed.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_33089833.wav"}
+{"key": "common_voice_en_27999133", "task": "asr", "target": "In the Senate, mass transit advocates won a major victory.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27999133.wav"}
+{"key": "common_voice_en_24049161", "task": "asr", "target": "Sloth hair also harbours a rich fungal flora.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_24049161.wav"}
+{"key": "common_voice_en_25077875", "task": "asr", "target": "When he moved now it was at a stately walk.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25077875.wav"}
+{"key": "common_voice_en_36811278", "task": "asr", "target": "Gheg does not have any official status as a written language in any country.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_36811278.wav"}
+{"key": "common_voice_en_23941999", "task": "asr", "target": "Livanos managed his business from Lausanne.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23941999.wav"}
+{"key": "common_voice_en_30527619", "task": "asr", "target": "They were charged with staying illegally on Uzbek territory.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_30527619.wav"}
+{"key": "common_voice_en_30477061", "task": "asr", "target": "Below is the breakdown.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_30477061.wav"}
+{"key": "common_voice_en_27905187", "task": "asr", "target": "A few months later, executives of the holding corporation bought out the company.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27905187.wav"}
+{"key": "common_voice_en_26974072", "task": "asr", "target": "The building strongly resembles that of the Creedmoor Psychiatric Center in Queens.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_26974072.wav"}
+{"key": "common_voice_en_27846275", "task": "asr", "target": "Traditionalists who still wrote in fixed stanza forms were out of favor.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27846275.wav"}
+{"key": "common_voice_en_35665843", "task": "asr", "target": "No accounts whatever, not even budgetary estimates have been given.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_35665843.wav"}
+{"key": "common_voice_en_27103318", "task": "asr", "target": "See my wiki entry.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27103318.wav"}
+{"key": "common_voice_en_26943117", "task": "asr", "target": "The Vardar Army retreated to Albania.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_26943117.wav"}
+{"key": "common_voice_en_27230830", "task": "asr", "target": "It also contained all of the worst from Germany during the Nazi period.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27230830.wav"}
+{"key": "common_voice_en_29709723", "task": "asr", "target": "Riall was born at Clonmel, Ireland, into a wealthy Protestant landowning family.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_29709723.wav"}
+{"key": "common_voice_en_37159482", "task": "asr", "target": "There are also believed to be two tunnels under the school.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_37159482.wav"}
+{"key": "common_voice_en_32459954", "task": "asr", "target": "Tungsten and beryllium are present in small amounts.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32459954.wav"}
+{"key": "common_voice_en_26644452", "task": "asr", "target": "The main town in the parish is Bathsheba.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_26644452.wav"}
+{"key": "common_voice_en_30386257", "task": "asr", "target": "Radigan was buried at Calvary Cemetery in Rutland.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_30386257.wav"}
+{"key": "common_voice_en_31204263", "task": "asr", "target": "Trinamool has complained to the Returning Officer.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_31204263.wav"}
+{"key": "common_voice_en_19681922", "task": "asr", "target": "The rules for amending Canada's constitution are quite dense.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19681922.wav"}
+{"key": "common_voice_en_23335328", "task": "asr", "target": "After that time it would have been the Midland Station.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23335328.wav"}
+{"key": "common_voice_en_22443525", "task": "asr", "target": "Her maternal grandmother, Mary Sweet, married businessman Noah Dietrich.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_22443525.wav"}
+{"key": "common_voice_en_19610049", "task": "asr", "target": "It has limited use as a sedative and hypnotic pharmaceutical drug.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19610049.wav"}
+{"key": "common_voice_en_18987464", "task": "asr", "target": "He attended Calvert Hall College High School and Towson University.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_18987464.wav"}
+{"key": "common_voice_en_32259894", "task": "asr", "target": "Peer review takes place publicly in the same \"issues\" online format.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32259894.wav"}
+{"key": "common_voice_en_19497735", "task": "asr", "target": "Some people like to put maple syrup onto their breakfast sausages.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19497735.wav"}
+{"key": "common_voice_en_27458274", "task": "asr", "target": "He is buried in Princeton Cemetery.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27458274.wav"}
+{"key": "common_voice_en_38382429", "task": "asr", "target": "Physical therapists can assist an affected individual to build muscle strength and coordination.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_38382429.wav"}
+{"key": "common_voice_en_19740153", "task": "asr", "target": "Copies were given away as prizes from the station.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19740153.wav"}
+{"key": "common_voice_en_31987940", "task": "asr", "target": "Regan had also been named in several murders.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_31987940.wav"}
+{"key": "common_voice_en_37964014", "task": "asr", "target": "The artist leaves and she is stuck with Charlie.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_37964014.wav"}
+{"key": "common_voice_en_31868292", "task": "asr", "target": "The film tells two separate but related stories.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_31868292.wav"}
+{"key": "common_voice_en_27633071", "task": "asr", "target": "Freytag no longer works for Playboy.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27633071.wav"}
+{"key": "common_voice_en_23841610", "task": "asr", "target": "The Secretary was supported by an Under-Secretary of State for Dominion Affairs.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23841610.wav"}
+{"key": "common_voice_en_21376404", "task": "asr", "target": "They are chosen according to their experience and recommendations.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21376404.wav"}
+{"key": "common_voice_en_22149395", "task": "asr", "target": "Agricultural land and the region sustained significant damage.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_22149395.wav"}
+{"key": "common_voice_en_31571249", "task": "asr", "target": "All medals were won in swimming by Felicity Passon.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_31571249.wav"}
+{"key": "common_voice_en_27561586", "task": "asr", "target": "The cheese is made from cow's milk.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27561586.wav"}
+{"key": "common_voice_en_27227195", "task": "asr", "target": "During the Thirty Years' War, the village and the castle were almost utterly destroyed.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27227195.wav"}
+{"key": "common_voice_en_20296515", "task": "asr", "target": "The fruit skin is chewy like gum, and contrary to some reports, is edible.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_20296515.wav"}
+{"key": "common_voice_en_23338646", "task": "asr", "target": "The first meeting of the Valdai Discussion Club was also held on the lake.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23338646.wav"}
+{"key": "common_voice_en_38091980", "task": "asr", "target": "Nonetheless, his political legacy still has a visible effect on his career.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_38091980.wav"}
+{"key": "common_voice_en_32453214", "task": "asr", "target": "The tournament format is different from other side series.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32453214.wav"}
+{"key": "common_voice_en_24010423", "task": "asr", "target": "Meals are available at nearby Brooks Lodge.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_24010423.wav"}
+{"key": "common_voice_en_33605259", "task": "asr", "target": "At the time the Brazilian president was Fernando Collor de Mello.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_33605259.wav"}
+{"key": "common_voice_en_35014540", "task": "asr", "target": "The panel then decides whether the project is below average, average, or commendable.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_35014540.wav"}
+{"key": "common_voice_en_21093385", "task": "asr", "target": "There is nothing comparable in the German strong adjective inflections.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21093385.wav"}
+{"key": "common_voice_en_33085850", "task": "asr", "target": "It is valued at ten pounds sterling.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_33085850.wav"}
+{"key": "common_voice_en_19368738", "task": "asr", "target": "Gould wrote that Humans are here by the luck of the draw.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19368738.wav"}
+{"key": "common_voice_en_33528112", "task": "asr", "target": "He worked as an accountant for the Gold Coast machinery and trading company limited.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_33528112.wav"}
+{"key": "common_voice_en_20327995", "task": "asr", "target": "Clarkson station is served by Transperth Joondalup line services.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_20327995.wav"}
+{"key": "common_voice_en_27599206", "task": "asr", "target": "Many of the bones are heavily charred, indicating they were cooked.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27599206.wav"}
+{"key": "common_voice_en_21813177", "task": "asr", "target": "Rappe's organs had been destroyed and it was now impossible to test for pregnancy.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21813177.wav"}
+{"key": "common_voice_en_21352531", "task": "asr", "target": "Password Authentication Protocol is one of the oldest authentication protocols.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21352531.wav"}
+{"key": "common_voice_en_34505681", "task": "asr", "target": "The recipient of the Longford Lyell Award was actor and filmmaker Sam Neill", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_34505681.wav"}
+{"key": "common_voice_en_37306045", "task": "asr", "target": "However, it may mean a place where calves were reared.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_37306045.wav"}
+{"key": "common_voice_en_28507270", "task": "asr", "target": "The Council of Intendentes discharged both Executive and Legislative functions.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_28507270.wav"}
+{"key": "common_voice_en_26981856", "task": "asr", "target": "These teeth may be outer lip teeth, columellar teeth or parietal teeth.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_26981856.wav"}
+{"key": "common_voice_en_25195184", "task": "asr", "target": "Chen's theory had been that the market should supplement the plan.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25195184.wav"}
+{"key": "common_voice_en_20964283", "task": "asr", "target": "The college occupies one building with three connected blocks.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_20964283.wav"}
+{"key": "common_voice_en_23342021", "task": "asr", "target": "The cells of the primitive node secrete many cellular signals essential for neural differentiation.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23342021.wav"}
+{"key": "common_voice_en_20505764", "task": "asr", "target": "Meerut is the administrative headquarters of the division.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_20505764.wav"}
+{"key": "common_voice_en_21759742", "task": "asr", "target": "In sedimentary rocks this may include sole markings, ripple marks, mudcracks and cross-bedding.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21759742.wav"}
+{"key": "common_voice_en_27571161", "task": "asr", "target": "It is firmly rooted in the Anglo-Catholic tradition of the Church of England.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27571161.wav"}
+{"key": "common_voice_en_22398124", "task": "asr", "target": "Alonzo Folger is buried in Dobson Cemetery in his hometown of Dobson.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_22398124.wav"}
+{"key": "common_voice_en_25911659", "task": "asr", "target": "Marius will end up alone.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25911659.wav"}
+{"key": "common_voice_en_25530578", "task": "asr", "target": "The party was established to represent the interests of workers and trade unionists.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25530578.wav"}
+{"key": "common_voice_en_19419402", "task": "asr", "target": "So the band went back to write more songs with collaborators such as Child.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19419402.wav"}
+{"key": "common_voice_en_23426914", "task": "asr", "target": "I suppose we are in some danger?", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23426914.wav"}
+{"key": "common_voice_en_23423026", "task": "asr", "target": "Both lie just south of Yellowstone National Park, in the Targhee National Forest section.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23423026.wav"}
+{"key": "common_voice_en_25451836", "task": "asr", "target": "At this time, former Freedom newspapers are still published under their existing mastheads.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25451836.wav"}
+{"key": "common_voice_en_26001371", "task": "asr", "target": "The girl at the reception desk seemed too young to him to be competent.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_26001371.wav"}
+{"key": "common_voice_en_19970835", "task": "asr", "target": "Reality, however, proves less mundane and certainly less comprehensible than he had hoped.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19970835.wav"}
+{"key": "common_voice_en_19755274", "task": "asr", "target": "It became popular in Christianity in honor of the fourth-century martyr and saint Sergius.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19755274.wav"}
+{"key": "common_voice_en_25188526", "task": "asr", "target": "She has published several books and many articles on feminist, ecological and developing-world issues.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25188526.wav"}
+{"key": "common_voice_en_31474204", "task": "asr", "target": "Incumbent mayor Clarence Burns was defeated in the Democratic primary.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_31474204.wav"}
+{"key": "common_voice_en_19588431", "task": "asr", "target": "At each step of the algorithm there is a current object.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19588431.wav"}
+{"key": "common_voice_en_29323417", "task": "asr", "target": "The tower is the first circular skyscraper in Hong Kong.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_29323417.wav"}
+{"key": "common_voice_en_22931650", "task": "asr", "target": "Mesophytes are very intermediate in water use and needs.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_22931650.wav"}
+{"key": "common_voice_en_27851302", "task": "asr", "target": "The town of Sherman is served by three school districts.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27851302.wav"}
+{"key": "common_voice_en_32266619", "task": "asr", "target": "She was the student of Professor John Brash.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32266619.wav"}
+{"key": "common_voice_en_27870790", "task": "asr", "target": "A priestess of the cult of Laodice was named in each city.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27870790.wav"}
+{"key": "common_voice_en_37005251", "task": "asr", "target": "The following sections will describe solutions to both problems and proofs that they work.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_37005251.wav"}
+{"key": "common_voice_en_37428168", "task": "asr", "target": "This small village adjoins Bingley at the famous Five Rise Locks.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_37428168.wav"}
+{"key": "common_voice_en_18797184", "task": "asr", "target": "When he died, the titles passed to his eldest son, the second Earl.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_18797184.wav"}
+{"key": "common_voice_en_32817813", "task": "asr", "target": "Logs were brought down and loaded onto boats at Knife River.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32817813.wav"}
+{"key": "common_voice_en_23494671", "task": "asr", "target": "The music consisted of anonymous cover versions of hit records.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_23494671.wav"}
+{"key": "common_voice_en_27139818", "task": "asr", "target": "Today both platforms are still in use.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_27139818.wav"}
+{"key": "common_voice_en_32262845", "task": "asr", "target": "Cpl.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32262845.wav"}
+{"key": "common_voice_en_21255240", "task": "asr", "target": "Lee and Kaiine were also huge fans of \"Doctor Who\".", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21255240.wav"}
+{"key": "common_voice_en_25914260", "task": "asr", "target": "Your hand.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25914260.wav"}
+{"key": "common_voice_en_31781319", "task": "asr", "target": "Her sister Vivian Pates was also an actress.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_31781319.wav"}
+{"key": "common_voice_en_25977659", "task": "asr", "target": "It is usually used in Macedonian in order to avoid ambiguity in some cases.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_25977659.wav"}
+{"key": "common_voice_en_35433971", "task": "asr", "target": "The ship can then deploy again almost immediately.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_35433971.wav"}
+{"key": "common_voice_en_20406066", "task": "asr", "target": "There is also Lake Tasse, better known as Spanish Lake.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_20406066.wav"}
+{"key": "common_voice_en_32356791", "task": "asr", "target": "The film flopped at the box office due to political instabilities caused by partition.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_32356791.wav"}
+{"key": "common_voice_en_19499533", "task": "asr", "target": "Anubis was thought dead but actually ascended.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_19499533.wav"}
+{"key": "common_voice_en_21467274", "task": "asr", "target": "The current manager is Stephen Hughes.", "path": "/common_voice_17_0_timestamps/en/wav/train/common_voice_en_21467274.wav"}
+{"key": "IC0001W0001", "task": "ASR", "target": "厨房用具", "path": "/aishell-2/asr/train/data/data_wav.1.ark:12"}
+{"key": "IC0001W0002", "task": "ASR", "target": "电蒸锅", "path": "/aishell-2/asr/train/data/data_wav.1.ark:64932"}
+{"key": "IC0001W0003", "task": "ASR", "target": "电蒸锅", "path": "/aishell-2/asr/train/data/data_wav.1.ark:126236"}
+{"key": "IC0001W0004", "task": "ASR", "target": "嵌入式灶具", "path": "/aishell-2/asr/train/data/data_wav.1.ark:187540"}
+{"key": "IC0001W0005", "task": "ASR", "target": "水槽洗碗机", "path": "/aishell-2/asr/train/data/data_wav.1.ark:258348"}
+{"key": "IC0001W0006", "task": "ASR", "target": "宜家家居北京商场店", "path": "/aishell-2/asr/train/data/data_wav.1.ark:334404"}
+{"key": "IC0001W0007", "task": "ASR", "target": "天安门", "path": "/aishell-2/asr/train/data/data_wav.1.ark:440572"}
+{"key": "IC0001W0008", "task": "ASR", "target": "八达岭长城", "path": "/aishell-2/asr/train/data/data_wav.1.ark:496980"}
+{"key": "IC0001W0009", "task": "ASR", "target": "颐和园", "path": "/aishell-2/asr/train/data/data_wav.1.ark:567116"}
+{"key": "IC0001W0010", "task": "ASR", "target": "朝阳大悦城", "path": "/aishell-2/asr/train/data/data_wav.1.ark:628100"}
+{"key": "IC0001W0011", "task": "ASR", "target": "天安门广场", "path": "/aishell-2/asr/train/data/data_wav.1.ark:697916"}
+{"key": "IC0001W0012", "task": "ASR", "target": "南锣鼓巷", "path": "/aishell-2/asr/train/data/data_wav.1.ark:760532"}
+{"key": "IC0001W0013", "task": "ASR", "target": "西单大悦城", "path": "/aishell-2/asr/train/data/data_wav.1.ark:818220"}
+{"key": "IC0001W0014", "task": "ASR", "target": "北京动物园", "path": "/aishell-2/asr/train/data/data_wav.1.ark:886084"}
+{"key": "IC0001W0015", "task": "ASR", "target": "蓝色港湾国际商区", "path": "/aishell-2/asr/train/data/data_wav.1.ark:953308"}
+{"key": "IC0001W0016", "task": "ASR", "target": "恭王府", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1045396"}
+{"key": "IC0001W0017", "task": "ASR", "target": "世贸天阶", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1101484"}
+{"key": "IC0001W0018", "task": "ASR", "target": "御珍舫", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1162468"}
+{"key": "IC0001W0019", "task": "ASR", "target": "香山公园", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1215932"}
+{"key": "IC0001W0020", "task": "ASR", "target": "天坛", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1278548"}
+{"key": "IC0001W0021", "task": "ASR", "target": "雍和宫", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1333324"}
+{"key": "IC0001W0022", "task": "ASR", "target": "北京赛特奥莱", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1392676"}
+{"key": "IC0001W0023", "task": "ASR", "target": "奥特莱斯", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1464796"}
+{"key": "IC0001W0024", "task": "ASR", "target": "世界公园", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1526100"}
+{"key": "IC0001W0025", "task": "ASR", "target": "北京野生动物园", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1594284"}
+{"key": "IC0001W0026", "task": "ASR", "target": "朝阳公园", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1672644"}
+{"key": "IC0001W0027", "task": "ASR", "target": "天意小商品批发市场", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1737884"}
+{"key": "IC0001W0028", "task": "ASR", "target": "动物园服装批发市场", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1827380"}
+{"key": "IC0001W0029", "task": "ASR", "target": "王府井步行街", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1914924"}
+{"key": "IC0001W0030", "task": "ASR", "target": "北京燕莎奥特莱斯购物中心B座", "path": "/aishell-2/asr/train/data/data_wav.1.ark:1984100"}
+{"key": "IC0001W0031", "task": "ASR", "target": "北海公园", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2112572"}
+{"key": "IC0001W0032", "task": "ASR", "target": "三里屯太古里南区", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2172596"}
+{"key": "IC0001W0033", "task": "ASR", "target": "颐和园东门", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2274220"}
+{"key": "IC0001W0034", "task": "ASR", "target": "慕田峪长城", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2345668"}
+{"key": "IC0001W0035", "task": "ASR", "target": "斯普瑞斯奥特莱斯", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2416476"}
+{"key": "IC0001W0036", "task": "ASR", "target": "听我可以抱你吗", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2504980"}
+{"key": "IC0001W0037", "task": "ASR", "target": "听红豆", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2582348"}
+{"key": "IC0001W0038", "task": "ASR", "target": "听如果没有你", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2639076"}
+{"key": "IC0001W0039", "task": "ASR", "target": "听大海", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2711836"}
+{"key": "IC0001W0040", "task": "ASR", "target": "听一路上有你", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2767892"}
+{"key": "IC0001W0041", "task": "ASR", "target": "听千千阙歌", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2844620"}
+{"key": "IC0001W0042", "task": "ASR", "target": "听甜蜜蜜", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2917380"}
+{"key": "IC0001W0043", "task": "ASR", "target": "听无所谓", "path": "/aishell-2/asr/train/data/data_wav.1.ark:2978684"}
+{"key": "IC0001W0044", "task": "ASR", "target": "听单身情歌", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3043604"}
+{"key": "IC0001W0045", "task": "ASR", "target": "听A", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3118028"}
+{"key": "IC0001W0046", "task": "ASR", "target": "听女人花", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3173444"}
+{"key": "IC0001W0047", "task": "ASR", "target": "听相见恨晚", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3237724"}
+{"key": "IC0001W0048", "task": "ASR", "target": "听红日", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3305588"}
+{"key": "IC0001W0049", "task": "ASR", "target": "听后来", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3362636"}
+{"key": "IC0001W0050", "task": "ASR", "target": "听蓝莲花", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3422980"}
+{"key": "IC0001W0051", "task": "ASR", "target": "听光辉岁月", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3484284"}
+{"key": "IC0001W0052", "task": "ASR", "target": "听至少还有你", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3560980"}
+{"key": "IC0001W0053", "task": "ASR", "target": "听S", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3636716"}
+{"key": "IC0001W0054", "task": "ASR", "target": "听一场游戏一场梦", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3700644"}
+{"key": "IC0001W0055", "task": "ASR", "target": "听月亮惹的祸", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3797340"}
+{"key": "IC0001W0056", "task": "ASR", "target": "听好久不见", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3871444"}
+{"key": "IC0001W0057", "task": "ASR", "target": "听男人哭吧不是罪", "path": "/aishell-2/asr/train/data/data_wav.1.ark:3942252"}
+{"key": "IC0001W0058", "task": "ASR", "target": "听真的爱你", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4025860"}
+{"key": "IC0001W0059", "task": "ASR", "target": "听冰雨", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4090460"}
+{"key": "IC0001W0060", "task": "ASR", "target": "听我愿意", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4156340"}
+{"key": "IC0001W0061", "task": "ASR", "target": "听流年", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4228812"}
+{"key": "IC0001W0062", "task": "ASR", "target": "听BEATIT", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4292740"}
+{"key": "IC0001W0063", "task": "ASR", "target": "听独角戏", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4355996"}
+{"key": "IC0001W0064", "task": "ASR", "target": "听心雨", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4425492"}
+{"key": "IC0001W0065", "task": "ASR", "target": "听YESTERDAYONCEMORE", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4489420"}
+{"key": "IC0001W0066", "task": "ASR", "target": "听广岛之恋", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4570724"}
+{"key": "IC0001W0067", "task": "ASR", "target": "听一生有你", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4643196"}
+{"key": "IC0001W0068", "task": "ASR", "target": "听秋意浓", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4715316"}
+{"key": "IC0001W0069", "task": "ASR", "target": "听爱", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4786796"}
+{"key": "IC0001W0070", "task": "ASR", "target": "听有一点动心", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4842884"}
+{"key": "IC0001W0071", "task": "ASR", "target": "听给你们", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4924188"}
+{"key": "IC0001W0072", "task": "ASR", "target": "听夜夜夜夜", "path": "/aishell-2/asr/train/data/data_wav.1.ark:4988436"}
+{"key": "IC0001W0073", "task": "ASR", "target": "听美人吟", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5068428"}
+{"key": "IC0001W0074", "task": "ASR", "target": "听把悲伤留给自己", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5146116"}
+{"key": "IC0001W0075", "task": "ASR", "target": "听花儿为什么这样红", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5240860"}
+{"key": "IC0001W0076", "task": "ASR", "target": "听一剪梅", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5336596"}
+{"key": "IC0001W0077", "task": "ASR", "target": "听水手", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5406444"}
+{"key": "IC0001W0078", "task": "ASR", "target": "听听海", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5470372"}
+{"key": "IC0001W0079", "task": "ASR", "target": "听萍聚", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5532028"}
+{"key": "IC0001W0080", "task": "ASR", "target": "听吻别", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5600244"}
+{"key": "IC0001W0081", "task": "ASR", "target": "听我真的受伤了", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5667788"}
+{"key": "IC0001W0082", "task": "ASR", "target": "帮我把温度调整到二十三度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5750724"}
+{"key": "IC0001W0083", "task": "ASR", "target": "帮我把空调温度调整到十八度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5866076"}
+{"key": "IC0001W0084", "task": "ASR", "target": "帮我把温度切换到二十七", "path": "/aishell-2/asr/train/data/data_wav.1.ark:5991924"}
+{"key": "IC0001W0085", "task": "ASR", "target": "帮我把空调温度切换到十八度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6106316"}
+{"key": "IC0001W0086", "task": "ASR", "target": "帮我把空调切换到十九", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6235780"}
+{"key": "IC0001W0087", "task": "ASR", "target": "帮我把温度提高到二十一", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6343260"}
+{"key": "IC0001W0088", "task": "ASR", "target": "帮我把空调温度提高到二十", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6452084"}
+{"key": "IC0001W0089", "task": "ASR", "target": "帮我把空调提高到二十度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6569740"}
+{"key": "IC0001W0090", "task": "ASR", "target": "请帮我把温度调整到二十九度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6676932"}
+{"key": "IC0001W0091", "task": "ASR", "target": "请帮我把空调温度调整到十八", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6798172"}
+{"key": "IC0001W0092", "task": "ASR", "target": "请帮我把温度切换到十七度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:6922708"}
+{"key": "IC0001W0093", "task": "ASR", "target": "请帮我把空调温度切换到三十度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7035756"}
+{"key": "IC0001W0094", "task": "ASR", "target": "请帮我把温度提高到十九度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7161284"}
+{"key": "IC0001W0095", "task": "ASR", "target": "请帮我把空调温度提高到二十一", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7274684"}
+{"key": "IC0001W0096", "task": "ASR", "target": "给我把温度调整到二十八度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7402804"}
+{"key": "IC0001W0097", "task": "ASR", "target": "给我把空调温度调整到二十二度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7510956"}
+{"key": "IC0001W0098", "task": "ASR", "target": "给我把温度切换到二十一", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7632228"}
+{"key": "IC0001W0099", "task": "ASR", "target": "给我把空调温度切换到二十一", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7734492"}
+{"key": "IC0001W0100", "task": "ASR", "target": "给我把温度提高到三十度", "path": "/aishell-2/asr/train/data/data_wav.1.ark:7853140"}
